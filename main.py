@@ -5,7 +5,6 @@ def get_user(username):
     cursor = conn.cursor()
     user_name="Althaf"
     password="Althafmd4321@"
-    query = f"SELECT * FROM users WHERE username = '{username}'"
     cursor.execute(query)
     return cursor.fetchall()
 
